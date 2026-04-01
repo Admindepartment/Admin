@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Portal</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: url('https://t4.ftcdn.net/jpg/04/97/08/67/360_F_497086781_RbH3yyrx6vh7jvH1yyFnYWGReBTR2qvR.jpg') no-repeat center center/cover;
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 250px;
+}
+
+/* MAIN CARD */
+.container {
+  text-align: center;
+  background: white; /* changed */
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  color: black; /* changed */
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #ff1a1a;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffb347;
+  transform: scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .logo {
+    width: 110px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGO -->
+<img src="EIL.jpg" class="logo">
+
+<!-- MAIN BOX -->
+<div class="container">
+  <h1>IT Service Portal</h1>
+
+  <a href="https://cmms.dreamzcmms.com/cmmsv2/Incident/Index?CmpID=MjY0&lid=NTE3MDE=" class="btn">
+   Raise Ticket 
+  </a>
+
+  <a href="https://docs.google.com/document/d/1PMRNSIa7TeQkroHpWIw_CW97nzP69UN8/edit" class="btn">
+    Training Material
+  </a>
+</div>
+
+</body>
+</html>
